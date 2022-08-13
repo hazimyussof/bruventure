@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0">
+
+    <!-- Scrollable constrained content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/hill_bar"
+            android:drawableLeft="@drawable/ic_home_white_18dp"
+            android:text="@string/home"
+            android:fontFamily="@font/fredoka"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/HillBar"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/hill_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeButton" />
+
+        <TextView
+            android:id="@+id/HillName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredoka"
+            android:paddingHorizontal="54dp"
+            android:text="@string/bukit1"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/HillBar"
+            app:layout_constraintEnd_toStartOf="@+id/HillImage"
+            app:layout_constraintHorizontal_bias="0.404"
+            app:layout_constraintStart_toStartOf="@+id/HillBar"
+            app:layout_constraintTop_toTopOf="@+id/HillBar" />
+
+        <ImageView
+            android:id="@+id/HillImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="0dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sipatir_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/HillBar"
+            app:layout_constraintEnd_toEndOf="@+id/HillBar"
+            app:layout_constraintTop_toTopOf="@+id/HillBar" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fredoka"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textColor="@color/mainApplicationColor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HillBar" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka"
+            android:paddingHorizontal="20dp"
+            android:text="@string/sipatirDescription"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/images"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/descriptionText">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/sipatirSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="5000"
+                app:iss_corner_radius="20" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/whatToBring"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fredoka"
+            android:text="@string/what_to_bring"
+            android:textAlignment="center"
+            android:textColor="@color/mainApplicationColor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/images"
+            app:drawableStartCompat="@drawable/ic_info_black_18dp" />
+
+        <TextView
+            android:id="@+id/whatToBringText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fredoka"
+            android:text="@string/info"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whatToBring" />
+
+        <Button
+            android:id="@+id/LocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/radius"
+            android:fontFamily="@font/fredoka"
+            android:text="@string/locationButton"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whatToBringText" />
+
+        <Button
+            android:id="@+id/emergencyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radius"
+            android:fontFamily="@font/fredoka"
+            android:text="@string/emergencyButton"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LocationButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Adding Gradient Item -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="90"
+                android:startColor="#feada6"
+                android:endColor="#f5efef"
+                android:type="linear"/> <!-- Color from https://webgradients.com/ (Has been Changed with custom colors!) -->
+        </shape>
+    </item>
+
+</selector>

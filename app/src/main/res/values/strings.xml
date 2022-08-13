@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Bruventure</string>
+    <string name="invisible_text">‎</string>
+
+    <!-- Drawer Menu Items -->
+    <string name="home">Home</string>
+    <string name="about_us">About Us</string>
+    <string name="help_feedback">Help &amp; Feedback</string>
+    <string name="help_feedback_short">Help &amp; FB</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit Application</string>
+
+    <!-- Navigation Drawer -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- viewPager Title -->
+    <string name="main">default</string>
+    <string name="hikeSection">Hike</string>
+    <string name="StepSection">Step</string>
+
+    <!-- HikeFragment -->
+    <string name="step_counter">Step Counter</string>
+    <string name="weather_section">Weather section</string>
+    <string name="city">‎</string>
+    <string name="date">‎</string>
+    <string name="weather">‎</string>
+    <string name="_0">‎</string>
+    <string name="c">‎</string>
+    <string name="weather_not_updated">Weather not updated</string>
+
+    <!-- HikeFunctionalityFragment -->
+    <string name="hills">Hills</string>
+    <string name="bukit1">Sipatir</string>
+    <string name="bukit2">Silat</string>
+    <string name="bukit3">Sarang Helang</string>
+
+    <!-- SipatirFragment Section -->
+    <string name="sipatirDescription">Bukit Sipatir is a 5.6 kilometer loop trail located near Bandar Seri Begawan, Brunei and Muara, Brunei that features a river and is good for all skill levels. The trail is primarily used for hiking and walking.</string>
+    <!-- SilatFragment Section -->
+    <string name="silatDescription">Bukit Silat is a 4.2 kilometer loop trail located near Bandar Seri Begawan, Brunei and Muara, Brunei that offers the chance to see wildlife and is good for all skill levels. The trail is primarily used for hiking, walking, and nature trips.</string>
+    <!-- SarangHelangFragment Section -->
+    <string name="sarangHelangDescription">Bukit Sarang Helang and Tasek Lama is a 3.9 kilometer loop trail located near Bandar Seri Begawan, Brunei and Muara, Brunei that features a lake and is good for all skill levels. The trail is primarily used for hiking, walking, and bird watching.</string>
+    <!-- Shared Strings -->
+    <string name="info">Water  \n <br>Trekking Pole</br> \n <br>Towel</br> \n <br>Supplements</br> \n <br>Flashlight</br></string>
+    <string name="description">Description:</string>
+    <string name="what_to_bring">What to bring:</string>
+    <string name="locationButton">Location</string>
+    <string name="emergencyButton">Emergency Contact</string>
+
+    <!-- StepFragment -->
+    <string name="step">Step Counter Section</string>
+    <string name="sensor_detector">Sensor Detector</string>
+    <string name="steps">steps</string>
+    <string name="step_count">0‎</string>
+    <string name="calorie_count">0‎</string>
+    <string name="distance_count">0‎</string>
+    <string name="distance_walked">Distance walked:</string>
+    <string name="calories_burned">Calories burned:</string>
+    <string name="kcal">Kcal</string>
+    <string name="km">Km</string>
+
+    <!-- About Us Section -->
+    <string name="who_are_we">Who are we?</string>
+    <string name="who_are_we_description">We are a small collaboration team consisting of five members working on a collaborative project.</string>
+    <string name="What_is_our_purpose">What is our purpose?</string>
+    <string name="what_is_our_purpose_description">Although this application is designed specifically for hikers, we also wish to inspire none-hikers to start hiking. And we plan to do it through our application by providing our services and to hopefully grow our community.</string>
+    <string name="please_share_description">Please help us spread our name by sharing this application.</string>
+    <string name="share_application_button">Share</string>
+
+    <!-- Help and Feedback Section -->
+
+</resources>

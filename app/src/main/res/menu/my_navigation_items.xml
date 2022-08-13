@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/btn_home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home_black_18dp"/>
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group12">
+        <item
+            android:id="@+id/btn_aboutUs"
+            android:title="@string/about_us"
+            android:icon="@drawable/ic_info_black_18dp" />
+
+        <item
+            android:id="@+id/btn_helpFeedback"
+            android:title="@string/help_feedback"
+            android:icon="@drawable/ic_feedback_black_18dp" />
+
+        <item
+            android:id="@+id/btn_settings"
+            android:title="@string/settings"
+            android:icon="@drawable/ic_settings_black_18dp" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/btn_exitApplication"
+            android:title="@string/exit"
+            android:icon="@drawable/ic_exit_to_app_black_18dp" />
+    </group>
+
+</menu>

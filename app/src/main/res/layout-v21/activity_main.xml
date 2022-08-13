@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:minHeight="?attr/actionBarSize"
+                app:titleTextColor="@color/mainApplicationColor">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fredoka"
+                    android:text="@string/app_name"
+                    android:textColor="@color/mainApplicationColor"
+                    android:textSize="30sp"
+                    app:layout_anchor="@+id/topAppBar"
+                    app:layout_anchorGravity="center" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include
+            layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/my_navigation_items"
+        android:backgroundTint="#FFFFFF"
+        app:itemTextColor="#000000"
+        app:itemTextAppearance="@style/RochoesFontStyle"
+        app:itemIconTint="#000000"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true" /> <!-- Fits status bar for nav drawer-->
+</androidx.drawerlayout.widget.DrawerLayout>
+
+    <!-- References:
+        Code adapted from mike, 2019, https://stackoverflow.com/a/51633165
+        android:backgroundTint="#ffffff"
+
+        Code adapted from icortesi, 2016, https://stackoverflow.com/a/35374058
+        app:itemIconTint="@color/customColor"
+
+        -->
